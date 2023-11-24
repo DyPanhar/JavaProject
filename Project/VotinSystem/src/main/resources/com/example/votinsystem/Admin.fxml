@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.votinsystem.AdminLoginController">
+   <children>
+      <AnchorPane prefHeight="471.0" prefWidth="380.0" style="-fx-background-color: #5e1ee1;">
+         <children>
+            <Label layoutX="122.0" layoutY="121.0" prefHeight="45.0" prefWidth="201.0" text="      WELCOME" textFill="#f2e6e6">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="129.0" layoutY="160.0" prefHeight="31.0" prefWidth="110.0" text="        TO" textFill="#f2e6e6">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="139.0" layoutY="205.0" prefHeight="45.0" prefWidth="152.0" text="  ADMIN" textFill="#f2e6e6">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="75.0" layoutY="256.0" prefHeight="72.0" prefWidth="260.0" text="      SECTION" textFill="#f2e6e6">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="471.0" prefWidth="400.0">
+         <children>
+            <TextField layoutX="92.0" layoutY="220.0" prefHeight="32.0" prefWidth="214.0" promptText="Admin">
+               <opaqueInsets>
+                  <Insets right="10.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="93.0" layoutY="274.0" prefHeight="32.0" prefWidth="214.0" promptText=" Password">
+               <font>
+                  <Font name="Barlow Condensed Black" size="15.0" />
+               </font>
+            </TextField>
+            <Button layoutX="152.0" layoutY="342.0" mnemonicParsing="false" onAction="#switchToAminpage" prefHeight="32.0" prefWidth="95.0" text="Log in" textFill="#4d4949">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="15.0" />
+               </font></Button>
+            <Button layoutX="153.0" layoutY="399.0" mnemonicParsing="false" onAction="#switchToHomepage" prefHeight="32.0" prefWidth="95.0" text="Go back" textFill="#4d4949">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imageView" fitHeight="163.0" fitWidth="201.0" layoutX="92.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Img/pic.png" />
+               </image>
+               <effect>
+                  <Blend />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

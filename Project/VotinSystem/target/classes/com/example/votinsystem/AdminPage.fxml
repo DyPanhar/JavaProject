@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="743.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.votinsystem.AdminPage">
+   <top>
+      <AnchorPane prefHeight="234.0" prefWidth="818.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableView" prefHeight="267.0" prefWidth="892.0">
+              <columns>
+                <TableColumn fx:id="idCol" prefWidth="133.0" text="VOTER ID" />
+                <TableColumn fx:id="nameCol" prefWidth="186.0" text="NAME" />
+                  <TableColumn fx:id="dobCol" prefWidth="185.0" text="DATE OF BIRTH" />
+                  <TableColumn fx:id="genderCol" prefWidth="82.0" text="GENDER" />
+                  <TableColumn fx:id="telCol" prefWidth="176.0" text="PHONE NUMBER" />
+                  <TableColumn fx:id="pwCol" prefWidth="129.0" text="PASSWORD" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="337.0" prefWidth="336.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="143.0" fitWidth="163.0" layoutX="97.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Img/pic2.png" />
+               </image>
+            </ImageView>
+            <Button blendMode="DARKEN" layoutX="44.0" layoutY="273.0" mnemonicParsing="false" onAction="#addVoter" prefHeight="29.0" prefWidth="106.0" style="-fx-background-color: green;" text="ADD VOTER" textFill="#f8eded">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="178.0" layoutY="273.0" mnemonicParsing="false" onAction="#removeVoter" prefHeight="31.0" prefWidth="132.0" style="-fx-background-color: red;" text="REMOVE VOTER" textFill="#fffdfd">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="15.0" />
+               </font>
+            </Button>
+            <Button blendMode="DARKEN" layoutX="106.0" layoutY="355.0" mnemonicParsing="false" onAction="#switchToHomepage" prefHeight="29.0" prefWidth="106.0" text="log out" textFill="#463535">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="476.0" prefWidth="462.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="33.0" layoutY="55.0" text="NAME :" textFill="#5e1ee1">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nametxt" layoutX="127.0" layoutY="56.0" prefHeight="31.0" prefWidth="246.0" />
+            <Label layoutX="23.0" layoutY="119.0" prefHeight="36.0" prefWidth="151.0" text=" VOTER ID : " textFill="#5e1ee1">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="183.0" text="DATE OF BIRTH :" textFill="#5e1ee1">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="296.0" text="PHONE NUMBER :" textFill="#5e1ee1">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="351.0" text="PASSWORD :" textFill="#5e1ee1">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idtxt" layoutX="167.0" layoutY="122.0" prefHeight="31.0" prefWidth="152.0" />
+            <TextField fx:id="gendertxt" layoutX="145.0" layoutY="243.0" prefHeight="31.0" prefWidth="160.0" />
+            <TextField fx:id="teltxt" layoutX="232.0" layoutY="299.0" prefHeight="31.0" prefWidth="210.0" />
+            <TextField fx:id="pwtxt" layoutX="175.0" layoutY="352.0" prefHeight="31.0" prefWidth="195.0" />
+            <DatePicker fx:id="dobtxt" layoutX="225.0" layoutY="189.0" />
+            <Label layoutX="23.0" layoutY="240.0" text="GENDER :" textFill="#5e1ee1">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
