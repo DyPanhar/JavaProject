@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.votinsystem.ResultPage">
+   <center>
+      <GridPane prefHeight="546.0" prefWidth="851.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="463.0" minWidth="10.0" prefWidth="82.99999237060547" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="463.0" minWidth="10.0" prefWidth="187.00000762939453" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="779.8000030517578" minWidth="10.0" prefWidth="365.6" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="779.8000030517578" minWidth="10.0" prefWidth="282.4" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="281.60000762939455" minHeight="10.0" prefHeight="54.399994659423825" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="391.99998474121094" minHeight="10.0" prefHeight="185.5999877929688" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="349.5999633789062" minHeight="0.0" prefHeight="172.59998779296876" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="272.79999999999995" minHeight="0.0" prefHeight="131.80001220703122" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="resultLabel" prefHeight="65.0" prefWidth="368.0" textFill="#17dd4c" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Showcard Gothic" size="31.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="157.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../Img/decmoratic.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="124.0" fitWidth="189.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../Img/republic.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="33.0" prefWidth="264.0" text="number of vote :" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Showcard Gothic" size="27.0" />
+               </font>
+            </Label>
+            <Label prefHeight="33.0" prefWidth="264.0" text="number of vote :" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Showcard Gothic" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="demoNum" prefHeight="47.0" prefWidth="48.0" textFill="#12cd1b" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Showcard Gothic" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="republicNum" prefHeight="40.0" prefWidth="48.0" textFill="#12cd1b" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Showcard Gothic" size="35.0" />
+               </font>
+            </Label>
+            <Button fx:id="resultBox" mnemonicParsing="false" onAction="#resultCheck" prefHeight="34.0" prefWidth="140.0" style="-fx-background-color: green;" text="see result" textFill="#fffafa" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Showcard Gothic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="doneBox" mnemonicParsing="false" onAction="#switchToHomepage" prefHeight="34.0" prefWidth="140.0" style="-fx-background-color: green;" text="done" textFill="#fffafa" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Showcard Gothic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="backBox" mnemonicParsing="false" onAction="#switchToHomepage" prefHeight="33.0" prefWidth="103.0" style="-fx-background-color: red;" text="go back" textFill="#fffafa" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Showcard Gothic" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

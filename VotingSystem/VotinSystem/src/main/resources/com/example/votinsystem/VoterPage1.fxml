@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.votinsystem.VoterPage1">
+   <center>
+      <Group BorderPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="221.60001220703126" minHeight="10.0" prefHeight="196.00001220703126" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="112.79999389648438" minHeight="10.0" prefHeight="53.59998779296873" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="107.19997253417966" minHeight="10.0" prefHeight="43.19999999999999" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="110.60001220703123" minHeight="10.0" prefHeight="107.39999999999998" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="610.0" text="seem like you already voted." textFill="#f80b0b" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Showcard Gothic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="605.0" text="click here to see the result" textFill="#f80b0b" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Showcard Gothic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="70.0" prefWidth="547.0" GridPane.rowIndex="3">
+                     <children>
+                        <Button layoutX="247.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToResultPage" style="-fx-background-color: green;" text="RESULT" textFill="#fcf8f8">
+                           <font>
+                              <Font name="Showcard Gothic" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="186.0" prefWidth="456.0">
+                     <children>
+                        <ImageView fitHeight="186.0" fitWidth="280.0" layoutX="152.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Img/oops.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+         </children>
+      </Group>
+   </center>
+</BorderPane>
